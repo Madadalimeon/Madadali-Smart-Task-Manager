@@ -38,15 +38,15 @@
         <div class="card login-card shadow-lg p-4">
             <h3 class="text-center mb-4">Login</h3>
 
-            <form>
+            <form method="POST" action="./../Controller/Users2.php">
                 <div class="mb-3">
-                    <label class="form-label">Email</label>
-                    <input type="email" class="form-control" placeholder="Enter your email" required>
+                    <label class="form-label">Full Name</label>
+                    <input type="text" name="username" class="form-control" placeholder="Enter your name"  required>
                 </div>
 
                 <div class="mb-3">
                     <label class="form-label">Password</label>
-                    <input type="password" class="form-control" placeholder="Enter your password" required>
+                    <input type="password" name="password" class="form-control" placeholder="Enter your password" required>
                 </div>
 
                 <button class="btn btn-custom w-100">Login</button>
